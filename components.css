@@ -1,7 +1,7 @@
 /* ============================================================
    DESIGN KIT — Complete component stylesheet (white-labelled)
       Reusable, brand-agnostic styles. Override --ds-* tokens to re-brand.
-   Sections: splash, header, hero, ayah (verse), leerpad (cards), footer, other
+   Sections: splash, header, hero, ayah (verse), pathway (cards), footer, other
    ============================================================ */
 
 
@@ -67,8 +67,8 @@
 .ds-header__drawer-cta:hover { background: rgba(242, 232, 213, 0.08); color: rgb(242, 232, 213); }
 .ds-header.is-scrolled .ds-header__nav { background: rgba(26, 18, 8, 0.97); backdrop-filter: blur(8px); }
 .ds-header.is-scrolled .ds-header__topbar { display: none; }
-.ds-leerpad__header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 28px; opacity: 0; transform: translateY(14px); transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.1s, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
-.ds-leerpad.is-visible .ds-leerpad__header { opacity: 1; transform: translateY(0px); }
+.ds-pathway__header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 28px; opacity: 0; transform: translateY(14px); transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.1s, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
+.ds-pathway.is-visible .ds-pathway__header { opacity: 1; transform: translateY(0px); }
 .ds-pub__header { margin-bottom: 40px; opacity: 0; transform: translateY(16px); transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.1s, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
 .ds-pub__mag-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; opacity: 0; transform: translateY(12px); transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
 .ds-pub.is-visible .ds-pub__header { opacity: 1; transform: translateY(0px); }
@@ -76,7 +76,7 @@
 .ds-pub.is-visible .ds-pub__mag-header { transition-delay: 0.65s; }
 
 /* ================= HERO ================= */
-.ds-leerpad__hero-body { font-size: 18px !important; line-height: 1.85 !important; }
+.ds-pathway__hero-body { font-size: 18px !important; line-height: 1.85 !important; }
 .ds-hero *, .ds-hero ::before, .ds-hero ::after { box-sizing: border-box; margin: 0px; padding: 0px; }
 .ds-hero { background: rgb(42, 35, 24); position: relative; width: 100vw; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
 .ds-hero__glow { position: absolute; inset: 0px; z-index: 1; pointer-events: none; background: radial-gradient(at 75% 50%, rgba(212, 169, 106, 0.09) 0%, transparent 60%); animation: 6s ease-in-out 0s infinite normal none running ds-glow-breathe; }
@@ -116,51 +116,51 @@
 .ds-ayah.is-visible .ds-ayah__divider { transform: scaleY(1); }
 .ds-ayah.is-visible .ds-ayah__text-block { opacity: 1; transform: translateX(0px); }
 
-/* ================= LEERPAD ================= */
-.ds-leerpad__card-title { font-size: 18px !important; }
-.ds-leerpad__card-sub { font-size: 15px !important; line-height: 1.75 !important; }
-.ds-leerpad__card-num { font-size: 12px !important; }
-.ds-leerpad__card-tag { font-size: 11px !important; }
-.ds-leerpad__card-status { font-size: 11px !important; }
-.ds-leerpad__card-counter { font-size: 12px !important; }
-.ds-leerpad__section-label p { font-size: 16px !important; }
-.ds-leerpad__progress-label { font-size: 12px !important; }
-.ds-leerpad__progress-count { font-size: 15px !important; }
-.ds-leerpad__cta-body { font-size: 16px !important; line-height: 1.8 !important; }
-.ds-leerpad__meta-pill { font-size: 14px !important; }
-.ds-leerpad__btn { font-size: 15px !important; padding: 16px 32px !important; }
-.ds-leerpad *, .ds-leerpad ::before, .ds-leerpad ::after { box-sizing: border-box; margin: 0px; padding: 0px; }
-.ds-leerpad { background: rgb(253, 250, 245); position: relative; width: 100vw; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-.ds-leerpad__inner { max-width: 1200px; margin: 0px auto; padding: 52px 48px 56px; }
-.ds-leerpad__eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: rgb(196, 82, 42); margin-bottom: 8px; }
-.ds-leerpad__title { font-size: clamp(32px, 4vw, 48px); font-weight: 800; line-height: 1.05; color: rgb(26, 18, 8); letter-spacing: -0.02em; }
-.ds-leerpad__title em { font-style: italic; font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
-.ds-leerpad__all-link { font-size: 14px; font-weight: 600; color: rgb(196, 82, 42); text-decoration: none; white-space: nowrap; padding-bottom: 4px; transition: opacity 0.2s; flex-shrink: 0; margin-left: 24px; }
-.ds-leerpad__all-link:hover { opacity: 0.72; color: rgb(196, 82, 42); }
-.ds-leerpad__strip-wrap { position: relative; }
-.ds-leerpad__strip { display: grid; grid-template-columns: repeat(6, 210px); gap: 14px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; cursor: grab; }
-.ds-leerpad__strip:active { cursor: grabbing; }
-.ds-leerpad__strip::-webkit-scrollbar { display: none; }
-.ds-leerpad__strip-wrap::after { content: ""; position: absolute; top: 0px; right: 0px; width: 60px; height: calc(100% - 28px); background: linear-gradient(90deg, transparent, rgba(253, 250, 245, 0.7)); pointer-events: none; }
-.ds-leerpad__card { border-radius: 10px; overflow: hidden; position: relative; text-decoration: none; display: block; flex-shrink: 0; opacity: 0; transform: translateY(20px); transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1); }
-.ds-leerpad__card.card-visible { opacity: 1; transform: translateY(0px); }
-.ds-leerpad__card:hover { transform: translateY(-4px); }
-.ds-leerpad__card-img { width: 100%; padding-bottom: 138%; position: relative; border-radius: 10px; overflow: hidden; }
-.ds-leerpad__card:nth-child(1) .ds-leerpad__card-img { background: rgb(42, 35, 24); }
-.ds-leerpad__card:nth-child(2) .ds-leerpad__card-img { background: rgb(29, 34, 40); }
-.ds-leerpad__card:nth-child(3) .ds-leerpad__card-img { background: rgb(38, 24, 24); }
-.ds-leerpad__card:nth-child(4) .ds-leerpad__card-img { background: rgb(26, 37, 32); }
-.ds-leerpad__card:nth-child(5) .ds-leerpad__card-img { background: rgb(34, 28, 46); }
-.ds-leerpad__card:nth-child(6) .ds-leerpad__card-img { background: rgb(30, 23, 20); }
-.ds-leerpad__card-overlay { position: absolute; inset: 0px; background: linear-gradient(rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.78) 100%); }
-.ds-leerpad__card-num { position: absolute; top: 14px; left: 14px; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; color: rgba(242, 232, 213, 0.52); }
-.ds-leerpad__card-tag { position: absolute; top: 14px; right: 12px; font-size: 9px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgb(196, 82, 42); background: rgba(26, 14, 6, 0.55); padding: 3px 7px; border-radius: 3px; }
-.ds-leerpad__card-body { position: absolute; bottom: 0px; left: 0px; right: 0px; padding: 14px 14px 16px; }
-.ds-leerpad__card-title { font-size: 13px; font-weight: 700; color: rgb(242, 232, 213); line-height: 1.3; margin-bottom: 4px; }
-.ds-leerpad__card-sub { font-size: 11px; color: rgba(242, 232, 213, 0.72); line-height: 1.4; }
-.ds-leerpad__hint { margin-top: 14px; font-size: 11px; color: rgba(26, 18, 8, 0.52); display: flex; align-items: center; gap: 6px; opacity: 0; transition: opacity 0.5s 0.9s; }
-.ds-leerpad__hint-arrow { display: inline-block; animation: 1.8s ease-in-out 0s infinite normal none running ds-hint-nudge; }
-.ds-leerpad.is-visible .ds-leerpad__hint { opacity: 1; }
+/* ================= PATHWAY ================= */
+.ds-pathway__card-title { font-size: 18px !important; }
+.ds-pathway__card-sub { font-size: 15px !important; line-height: 1.75 !important; }
+.ds-pathway__card-num { font-size: 12px !important; }
+.ds-pathway__card-tag { font-size: 11px !important; }
+.ds-pathway__card-status { font-size: 11px !important; }
+.ds-pathway__card-counter { font-size: 12px !important; }
+.ds-pathway__section-label p { font-size: 16px !important; }
+.ds-pathway__progress-label { font-size: 12px !important; }
+.ds-pathway__progress-count { font-size: 15px !important; }
+.ds-pathway__cta-body { font-size: 16px !important; line-height: 1.8 !important; }
+.ds-pathway__meta-pill { font-size: 14px !important; }
+.ds-pathway__btn { font-size: 15px !important; padding: 16px 32px !important; }
+.ds-pathway *, .ds-pathway ::before, .ds-pathway ::after { box-sizing: border-box; margin: 0px; padding: 0px; }
+.ds-pathway { background: rgb(253, 250, 245); position: relative; width: 100vw; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+.ds-pathway__inner { max-width: 1200px; margin: 0px auto; padding: 52px 48px 56px; }
+.ds-pathway__eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: rgb(196, 82, 42); margin-bottom: 8px; }
+.ds-pathway__title { font-size: clamp(32px, 4vw, 48px); font-weight: 800; line-height: 1.05; color: rgb(26, 18, 8); letter-spacing: -0.02em; }
+.ds-pathway__title em { font-style: italic; font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
+.ds-pathway__all-link { font-size: 14px; font-weight: 600; color: rgb(196, 82, 42); text-decoration: none; white-space: nowrap; padding-bottom: 4px; transition: opacity 0.2s; flex-shrink: 0; margin-left: 24px; }
+.ds-pathway__all-link:hover { opacity: 0.72; color: rgb(196, 82, 42); }
+.ds-pathway__strip-wrap { position: relative; }
+.ds-pathway__strip { display: grid; grid-template-columns: repeat(6, 210px); gap: 14px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; cursor: grab; }
+.ds-pathway__strip:active { cursor: grabbing; }
+.ds-pathway__strip::-webkit-scrollbar { display: none; }
+.ds-pathway__strip-wrap::after { content: ""; position: absolute; top: 0px; right: 0px; width: 60px; height: calc(100% - 28px); background: linear-gradient(90deg, transparent, rgba(253, 250, 245, 0.7)); pointer-events: none; }
+.ds-pathway__card { border-radius: 10px; overflow: hidden; position: relative; text-decoration: none; display: block; flex-shrink: 0; opacity: 0; transform: translateY(20px); transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1); }
+.ds-pathway__card.card-visible { opacity: 1; transform: translateY(0px); }
+.ds-pathway__card:hover { transform: translateY(-4px); }
+.ds-pathway__card-img { width: 100%; padding-bottom: 138%; position: relative; border-radius: 10px; overflow: hidden; }
+.ds-pathway__card:nth-child(1) .ds-pathway__card-img { background: rgb(42, 35, 24); }
+.ds-pathway__card:nth-child(2) .ds-pathway__card-img { background: rgb(29, 34, 40); }
+.ds-pathway__card:nth-child(3) .ds-pathway__card-img { background: rgb(38, 24, 24); }
+.ds-pathway__card:nth-child(4) .ds-pathway__card-img { background: rgb(26, 37, 32); }
+.ds-pathway__card:nth-child(5) .ds-pathway__card-img { background: rgb(34, 28, 46); }
+.ds-pathway__card:nth-child(6) .ds-pathway__card-img { background: rgb(30, 23, 20); }
+.ds-pathway__card-overlay { position: absolute; inset: 0px; background: linear-gradient(rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.78) 100%); }
+.ds-pathway__card-num { position: absolute; top: 14px; left: 14px; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; color: rgba(242, 232, 213, 0.52); }
+.ds-pathway__card-tag { position: absolute; top: 14px; right: 12px; font-size: 9px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgb(196, 82, 42); background: rgba(26, 14, 6, 0.55); padding: 3px 7px; border-radius: 3px; }
+.ds-pathway__card-body { position: absolute; bottom: 0px; left: 0px; right: 0px; padding: 14px 14px 16px; }
+.ds-pathway__card-title { font-size: 13px; font-weight: 700; color: rgb(242, 232, 213); line-height: 1.3; margin-bottom: 4px; }
+.ds-pathway__card-sub { font-size: 11px; color: rgba(242, 232, 213, 0.72); line-height: 1.4; }
+.ds-pathway__hint { margin-top: 14px; font-size: 11px; color: rgba(26, 18, 8, 0.52); display: flex; align-items: center; gap: 6px; opacity: 0; transition: opacity 0.5s 0.9s; }
+.ds-pathway__hint-arrow { display: inline-block; animation: 1.8s ease-in-out 0s infinite normal none running ds-hint-nudge; }
+.ds-pathway.is-visible .ds-pathway__hint { opacity: 1; }
 
 /* ================= FOOTER ================= */
 .site-footer { padding-block: 1rem; position: relative; }
