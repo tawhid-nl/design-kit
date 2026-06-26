@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design Kit - Preview</title>
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="components.css">
+</head>
+<body>
+<header class="ds-header" id="ds-header">
+
+	<!-- Top bar: secondary links -->
+	<div class="ds-header__topbar">
+		<div class="ds-header__topbar-inner">
+			<a href="#" class="ds-header__topbar-link">Over Ons</a>
+			<a href="#" class="ds-header__topbar-link">Amsterdam</a>
+			<a href="#" class="ds-header__topbar-link">Istanbul</a>
+		</div>
+	</div>
+
+	<!-- Main navigation -->
+	<nav class="ds-header__nav" role="navigation" aria-label="Main navigation">
+		<div class="ds-header__nav-inner">
+
+			<!-- Logo -->
+			<a href="#" class="ds-header__logo">
+				BRAND</a>
+
+			<!-- Primary links -->
+			<ul class="ds-header__links">
+				<li><a href="#">Over Ons</a></li>
+				<li><a href="#">Onze Aqīdah</a></li>
+				<li><a href="#">Artikelen</a></li>
+				<li><a href="#">Lessen</a></li>
+				<li><a href="#">Publicaties</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+
+			<!-- Right: CTA + hamburger -->
+			<div class="ds-header__right">
+				<a href="#" class="ds-header__cta">Verder met leren →</a>
+				<button class="ds-header__hamburger" id="ds-hamburger" aria-label="Menu openen" aria-expanded="false" aria-controls="ds-drawer">
+					<span></span>
+					<span></span>
+				<span></span></button>
+			</div>
+
+		</div>
+	</nav>
+
+	<!-- Mobile drawer -->
+	<div class="ds-header__drawer" id="ds-drawer" role="menu">
+		<ul class="ds-header__drawer-links">
+			<li><a href="#">Over Ons</a></li>
+			<li><a href="#">Onze Aqīdah</a></li>
+			<li><a href="#">Artikelen</a></li>
+			<li><a href="#">Lessen</a></li>
+			<li><a href="#">Publicaties</a></li>
+			<li><a href="#">Amsterdam</a></li>
+			<li><a href="#">Istanbul</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+		<a href="#" class="ds-header__drawer-cta">Verder met leren →</a>
+	</div>
+	
+	<script>
+(function(){
+  var h = document.getElementById('masthead') || document.querySelector('header');
+  if(h) window.dsHH = Math.round(h.getBoundingClientRect().bottom);
+})();
+</script>
+
+</header>
+<div id="ds-splash" aria-hidden="true" role="presentation" class="is-hiding is-gone">
+		<div id="ds-splash__eyebrow">BRAND</div>
+		<div id="ds-splash__ar">لا إلٰه إلّا الله</div>
+		<div id="ds-splash__bar-wrap">
+			<div id="ds-splash__bar-fill"></div>
+		</div>
+	</div>
+<section class="ds-hero">
+
+  <div class="ds-hero__glow" aria-hidden="true"></div>
+  <div class="ds-hero__arabic" aria-hidden="true">لَا إِلَٰهَ<br>إِلَّا ٱللَّٰهُ</div>
+
+  <div class="ds-hero__body">
+    <p class="ds-hero__eyebrow">Ahlus-Sunnah wal-Jamāʿah</p>
+    <h1 class="ds-hero__headline">
+      Het fundament<br>
+      van de dīn.<br>
+      <em>Lā ilāha illallāh.</em>
+    </h1>
+    <p class="ds-hero__subtext">
+      Kalimatu’t-Tawhīd is het doel van de schepping, de poort tot de islām en de sleutel tot het Paradijs. Leer wat dit woord werkelijk vereist — zijn betekenis, zijn pilaren en wat het ongeldig maakt.
+    </p>
+    <div class="ds-hero__actions">
+      <a href="#" class="ds-hero__btn-primary">Begin met leren →</a>
+      <a href="#" class="ds-hero__btn-secondary">Over BRAND</a>
+    </div>
+  </div>
+
+  <div class="ds-hero__accent-bar" aria-hidden="true"></div>
+
+</section>
+<section class="ds-ayah is-visible" id="ds-ayah">
+
+  <div class="ds-ayah__top-bar" aria-hidden="true"></div>
+  <div class="ds-ayah__bg-glyph" aria-hidden="true">وُثْقَىٰ</div>
+
+  <div class="ds-ayah__inner">
+
+    <!-- Arabic -->
+    <div class="ds-ayah__arabic-block">
+      <p class="ds-ayah__eyebrow">Qurān — Al-Baqarah</p>
+      <p class="ds-ayah__arabic" id="ds-arabic-text" dir="rtl"><span class="letter" style="opacity: 1;">فَ</span></p>
+      <p class="ds-ayah__ref" id="ds-ayah-ref" style="opacity: 1;">Vers 2:256</p>
+    </div>
+
+    <!-- Divider -->
+    <div class="ds-ayah__divider" aria-hidden="true"></div>
+
+    <!-- Translation + CTA -->
+    <div class="ds-ayah__text-block">
+      <p class="ds-ayah__translation">
+        “Wie de <strong>Tāghūt verwerpt</strong> en in Allāh gelooft, heeft zich vastgegrepen aan het <strong>stevigste handvat dat nooit zal breken.</strong> Allāh is Alhorend, Alwetend.”
+      </p>
+      <a href="#" class="ds-ayah__cta">Begrijp wat Tawhīd vereist →</a>
+    </div>
+
+  </div>
+
+</section>
+<footer id="site-footer" class="site-footer">
+	</footer>
+</body>
+</html>
