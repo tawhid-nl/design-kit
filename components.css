@@ -1,6 +1,6 @@
 /* ============================================================
    DESIGN KIT — Complete component stylesheet (white-labelled)
-   Extracted from live site. Brand names replaced: minhac -> ds
+      Reusable, brand-agnostic styles. Override --ds-* tokens to re-brand.
    Sections: splash, header, hero, ayah (verse), leerpad (cards), footer, other
    ============================================================ */
 
