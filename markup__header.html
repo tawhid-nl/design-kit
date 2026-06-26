@@ -1,0 +1,65 @@
+<header class="ds-header" id="ds-header">
+
+	<!-- Top bar: secondary links -->
+	<div class="ds-header__topbar">
+		<div class="ds-header__topbar-inner">
+			<a href="https://ds-dawah.nl/over-ons/" class="ds-header__topbar-link">Over Ons</a>
+			<a href="https://ds-dawah.nl/amsterdam/" class="ds-header__topbar-link">Amsterdam</a>
+			<a href="https://ds-dawah.nl/istanbul/" class="ds-header__topbar-link">Istanbul</a>
+		</div>
+	</div>
+
+	<!-- Main navigation -->
+	<nav class="ds-header__nav" role="navigation" aria-label="Hoofdnavigatie">
+		<div class="ds-header__nav-inner">
+
+			<!-- Logo -->
+			<a href="https://ds-dawah.nl/" class="ds-header__logo">
+				MÎNḤĀÇ
+			</a>
+
+			<!-- Primary links -->
+			<ul class="ds-header__links">
+				<li><a href="https://ds-dawah.nl/over-ons/">Over Ons</a></li>
+				<li><a href="https://ds-dawah.nl/aqidah/">Onze Aqīdah</a></li>
+				<li><a href="https://ds-dawah.nl/artikelen/">Artikelen</a></li>
+				<li><a href="https://ds-dawah.nl/lessen/">Lessen</a></li>
+				<li><a href="https://ds-dawah.nl/publicaties/">Publicaties</a></li>
+				<li><a href="https://ds-dawah.nl/contact/">Contact</a></li>
+			</ul>
+
+			<!-- Right: CTA + hamburger -->
+			<div class="ds-header__right">
+				<a href="/leerpad/" class="ds-header__cta">Verder met leren →</a>
+				<button class="ds-header__hamburger" id="ds-hamburger" aria-label="Menu openen" aria-expanded="false" aria-controls="ds-drawer">
+					<span></span>
+					<span></span>
+				<span></span></button>
+			</div>
+
+		</div>
+	</nav>
+
+	<!-- Mobile drawer -->
+	<div class="ds-header__drawer" id="ds-drawer" role="menu">
+		<ul class="ds-header__drawer-links">
+			<li><a href="https://ds-dawah.nl/over-ons/">Over Ons</a></li>
+			<li><a href="https://ds-dawah.nl/aqidah/">Onze Aqīdah</a></li>
+			<li><a href="https://ds-dawah.nl/artikelen/">Artikelen</a></li>
+			<li><a href="https://ds-dawah.nl/lessen/">Lessen</a></li>
+			<li><a href="https://ds-dawah.nl/publicaties/">Publicaties</a></li>
+			<li><a href="https://ds-dawah.nl/amsterdam/">Amsterdam</a></li>
+			<li><a href="https://ds-dawah.nl/istanbul/">Istanbul</a></li>
+			<li><a href="https://ds-dawah.nl/contact/">Contact</a></li>
+		</ul>
+		<a href="/leerpad/" class="ds-header__drawer-cta">Verder met leren →</a>
+	</div>
+	
+	<script>
+(function(){
+  var h = document.getElementById('masthead') || document.querySelector('header');
+  if(h) window.dsHH = Math.round(h.getBoundingClientRect().bottom);
+})();
+</script>
+
+</header>
